@@ -868,6 +868,32 @@ public class AssemblyLineRecipes implements Runnable {
             .eut(TierEU.RECIPE_UV)
             .addTo(AssemblyLine);
 
+<<<<<<< Updated upstream
+=======
+        // Drone T2 Alt recipe using Green rocket fuel
+        GT_Values.RA.stdBuilder()
+            .metadata(RESEARCH_ITEM, ItemList.TierdDrone0.get(1))
+            .metadata(RESEARCH_TIME, 2 * HOURS)
+            .itemInputs(
+                GT_OreDictUnificator.get(OrePrefixes.plateDense, Materials.NaquadahAlloy, 16),
+                new Object[] { OrePrefixes.circuit.get(Materials.SuperconductorUHV), 4 },
+                NewHorizonsCoreMod.isModLoaded()
+                    ? GT_ModHandler.getModItem(NewHorizonsCoreMod.ID, "item.HeavyDutyRocketEngineTier3", 4)
+                    : ItemList.Casing_Firebox_TungstenSteel.get(16),
+                ItemList.Large_Fluid_Cell_Osmium.get(1),
+                GT_OreDictUnificator.get(OrePrefixes.pipeQuadruple, Materials.MysteriousCrystal, 1),
+                ItemList.Emitter_ZPM.get(4),
+                ItemList.Energy_Module.get(1),
+                ItemList.Cover_WirelessNeedsMaintainance.get(1))
+            .itemOutputs(ItemList.TierdDrone1.get(4))
+            .fluidInputs(
+                new FluidStack(solderIndalloy, 576),
+                FluidRegistry.getFluidStack(GTPlusPlus.isModLoaded() ? "fluid.rocketfuelmixa" : "nitrofuel", 2000))
+            .duration(60 * SECONDS)
+            .eut(TierEU.RECIPE_UV)
+            .addTo(AssemblyLine);
+
+>>>>>>> Stashed changes
         // Drone T3
         GT_Values.RA.stdBuilder()
             .metadata(RESEARCH_ITEM, ItemList.TierdDrone1.get(1))
