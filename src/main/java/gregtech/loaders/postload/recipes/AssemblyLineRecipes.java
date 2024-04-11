@@ -868,9 +868,7 @@ public class AssemblyLineRecipes implements Runnable {
             .eut(TierEU.RECIPE_UV)
             .addTo(AssemblyLine);
 
-<<<<<<< Updated upstream
-=======
-        // Drone T2 Alt recipe using Green rocket fuel
+        // Drone T2 alt recipe with green rocket fuel
         GT_Values.RA.stdBuilder()
             .metadata(RESEARCH_ITEM, ItemList.TierdDrone0.get(1))
             .metadata(RESEARCH_TIME, 2 * HOURS)
@@ -893,7 +891,6 @@ public class AssemblyLineRecipes implements Runnable {
             .eut(TierEU.RECIPE_UV)
             .addTo(AssemblyLine);
 
->>>>>>> Stashed changes
         // Drone T3
         GT_Values.RA.stdBuilder()
             .metadata(RESEARCH_ITEM, ItemList.TierdDrone1.get(1))
